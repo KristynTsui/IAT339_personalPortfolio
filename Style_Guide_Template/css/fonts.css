@@ -1,0 +1,78 @@
+@font-face {
+  font-family: "Instrument Serif";
+  src: url("/fonts/InstrumentSerif-Regular.woff2") format("woff2");
+  font-style: normal;
+
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Instrument Serif - Italic";
+  src: url("/fonts/InstrumentSerif-Italic.woff2") format("woff2");
+  font-style: italic;
+
+  font-display: swap;
+}
+
+@font-face {
+    font-family: "Garamond Medium";
+    src: url("/fonts/CormorantGaramond-Regular.ttf");
+    font-style: normal;
+
+    font-display: swap;
+}
+
+
+/* Main Headings and Title Style */
+
+h1 {
+  font-family: "Instrument Serif", serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+h2 {
+  font-family: "Instrument Serif", serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+h3 {
+  font-family: "Instrument Serif", serif;
+  font-weight: 200;
+  font-style: normal;
+  text-transform: uppercase;
+}
+
+/* Subtitle Style */
+
+.rendered-subtitle {
+  font-family: "Instrument Serif - Italic", serif;
+  font-weight: 100;
+}
+
+/* Element Styles */
+
+p {
+
+}
+
+.nav-link {
+  font-family: "Instrument Serif", serif;
+  font-weight: 200;
+  font-style: normal;
+  text-transform: uppercase;
+}
+
+.element-subheading {
+  font-family: "Instrument Serif", serif;
+  font-weight: 200;
+  font-style: normal;
+  text-transform: uppercase;
+}
+
+#citations {
+  font-family: "Instrument Serif", serif;
+  font-weight: 200;
+  font-style: normal;
+}
