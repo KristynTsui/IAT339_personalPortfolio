@@ -8,101 +8,312 @@
 
     <link href="css/main.css" rel="stylesheet"/>
     <link href="css/flexbox.css" rel="stylesheet"/>
-    <link href="css/fonts.css" re="stylesheet"/>
+    <link href="css/fonts.css" rel="stylesheet"/>
 
   </head>
 
   <body>
 
-    <h1>Personal Portfolio Style Guide</h1>
-
-    <p class="rendered-subtitle">Style guide for building my portfolio</p>
-
     <!-- Navigation for Style Guide Sections -->
+
+    <header class="flexbox">
+      <h1 class="title-text">Personal Portfolio Style Guide</h1>
+      <p class="title-subtitle subtitle">Style guide for building my portfolio</p>
+    </header>
 
     <nav class="nav-main flexbox">
         <a class="nav-link" href="#interactive_elements">Interactive Elements</a>
         <a class="nav-link" href="#text_elements">Text Styling</a>
-        <a class="nav-link" href="#combined_elements">Combined Elements</a>
+        <a class="nav-link" href="#portfolio_elements">Portfolio Elements</a>
         <a class="nav-link" href="#citations">Citations</a>
     </nav>
 
 
+    <div id="main-content">
 
-    <!-- INTERACTIVE ELEMENTS SECTION // -->
-    <section id="interactive_elements">
+      <!-- Interactive Elements Section // -->
+      <section id="interactive_elements">
 
-      <!-- Default Button styling section -->
-      <section>
+        <section class="section-text">
 
-        <h2>Navigation Button</h2>
+          <h2>Navigation Button</h2>
 
-        <h3>CSS selector:</h3>
-        <p>.button-nav</p>
+          <div class="text-align">
+            <div class="vertical-line"></div>
 
-        <h3>Sample code:</h3>
-        <code>&lt;a href="#" class="button"&gt;Default Button&lt;/a&gt;</code>
+            <div class="text-content">
+              <h3>CSS selector:</h3>
+              <ul>
+                <li>.nav-link</li>
+              </ul>
 
-        <h3>Rendered element:</h3>
-        <a class="button" href="#">Default Button</a>
+              <h3>Sample code:</h3>
+              <code>&lt;a class="nav-link" href="#interactive_elements"&gt;Default Navigation Button&lt;/a&gt;</code>
+
+              <h3>Rendered element:</h3>
+              <a class="nav-link" href="#interactive_elements">Default Navigation Button</a>
+            </div>
+          </div>
+        </section>
+
+        <section class="section-text">
+          <h2>In-text link</h2>
+
+          <div class="text-align">
+            <div class="vertical-line"></div>
+
+            <div class="text-content">
+              <h3>CSS selector:</h3>
+              <ul>
+                <li>.in-text-link</li>
+              </ul>
+
+              <h3>Sample code:</h3>
+              <code>&lt;p&gt;Hello, my name is Kristyn, my portfolio can be found &lt;a href="#interactive_elements"&gt;here&lt;/a&gt; to browse.&lt;/p&gt;</code>
+
+              <h3>Rendered element:</h3>
+              <p>Hello, my name is Kristyn, my portfolio can be found <a class="in-text-link" href="#interactive_elements">here</a> to browse.</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="section-text">
+          <h2>Base Buttons</h2>
+
+          <div class="text-align">
+            <div class="vertical-line"></div>
+
+            <div class="text-content">
+              <h3>CSS selector:</h3>
+              <ul>
+                <li>.button-style</li>
+              </ul>
+
+              <h3>Sample code:</h3>
+              <code>&lt;button class="button-style" href="#interactive_elements"&gt;Default Button&lt;/button&gt;</code>
+
+              <h3>Rendered element:</h3>
+              <button class="button-style" href="#interactive_elements">Default Button</button>
+            </div>
+          </div>
+        </section>
+
+        <section class="section-text">
+          <h2>Text Input Field</h2>
+
+          <div class="text-align">
+            <div class="vertical-line"></div>
+
+            <div class="text-content">
+              
+              <h3>CSS selector:</h3>
+              <ul>
+                <li>.input-label</li>
+                <li>.text-input</li>
+                <li>.text-label</li>
+                <li>.input-field</li>
+              </ul>
+
+              <h3 class="element-subheading">Sample Code:</h3>
+              <code>&lt;label class="input-label" for="text-input"
+                &gt;Email Address:
+                &lt;/label&gt;
+                &lt;input
+                  id="text-input"
+                  class="input-field"
+                  type="text"
+                  placeholder="e.g. you@email.com"/&gt;</code>
+
+              <h3>Rendered element:</h3>
+                <label class="input-label" for="text-input"
+                  >Email Address:
+                </label>
+                <input
+                  id="text-input"
+                  class="input-field"
+                  type="text"
+                  placeholder="e.g. you@email.com"/>
+            </div>
+          </div>
+        </section>
 
       </section>
+      <!-- // INTERACTIVE ELEMENTS SECTION -->
 
-      <section>
-        <h2>In-text link</h2>
+
+
+      <!-- TEXT ELEMENTS SECTION // -->
+      <section id="text_elements">
+
+        <section class="section-text">
+          <h2>Headings</h2>
+
+          <div class="text-align">
+            <div class="vertical-line"></div>
+
+            <div class="text-content">
+              <h3>Sample code:</h3>
+              <pre><code>&lt;h1&gt;This is Heading 1&lt;/h1&gt;&lt;h2&gt;This is Heading 2&lt;/h2&gt;&lt;h3&gt;This is Heading 3&lt;/h3&gt;&lt;h4&gt;This is Heading 4&lt;/h4&gt;</code></pre>
+
+              <h3>Rendered element:</h3>
+              <h1>This is Heading 1</h1>
+              <h2>This is Heading 2</h2>
+              <h3>This is Heading 3</h3>
+              <h4>This is Heading 4</h4>
+            </div>
+          </div>
+        </section>
+
+        <section class="section-text">
+          <h2>Paragraphs</h2>
+
+          <div class="text-align">
+            <div class="vertical-line"></div>
+
+            <div class="text-content">
+              <h4>Sample code:</h4>
+              <code>&lt;p&gt;lorem ipsum dolor sit amet consectetur adipiscing elit anim minim quas elit 
+                accusamus qui pariatur nihil excepteur lorem fuga qui qui enim lorem occaecat culpa iusto 
+                laborum ex ea consequat tempore harum molestias facere laboris cillum enim omnis fugiat 
+                velit omnis odio tempor assumenda nisi voluptate ut in optio quis&lt;/p&gt;</code>
+
+              <h4>Rendered element:</h4>
+              <p>lorem ipsum dolor sit amet consectetur adipiscing elit anim minim quas elit accusamus 
+                qui pariatur nihil excepteur lorem fuga qui qui enim lorem occaecat culpa iusto laborum 
+                ex ea consequat tempore harum molestias facere laboris cillum enim omnis fugiat velit 
+                omnis odio tempor assumenda nisi voluptate ut in optio quis</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="section-text">
+          <h2>Bulleted Lists</h2>
+
+          <div class="text-align">
+            <div class="vertical-line"></div>
+
+            <div class="text-content">
+
+              <h3>Sample code:</h3>
+              <pre><code>&lt;ol&gt;&lt;li&gt;Project 1&lt;/li&gt;&lt;li&gt;Project 2&lt;/li&gt;&lt;li&gt;Project 3&lt;/li&gt;&lt;/ol&gt;</code></pre>
+
+              <h3>Rendered element:</h3>
+              <ol>
+                <li>Project 1</li>
+                <li>Project 2</li>
+                <li>Project 3</li>
+              </ol>
+
+            </div>
+          </div>
+        </section>
+
+        <section class="section-text">
+          <h2>Numbered Lists</h2>
+
+          <div class="text-align">
+            <div class="vertical-line"></div>
+
+            <div class="text-content">
+
+              <h3>Sample code:</h3>
+              <pre><code>&lt;ul&gt;&lt;li&gt;Project 1&lt;/li&gt;&lt;li&gt;Project 2&lt;/li&gt;&lt;li&gt;Project 3&lt;/li&gt;&lt;/ul&gt;</code></pre>
+
+              <h3>Rendered element:</h3>
+              <ul>
+                <li>Project 1</li>
+                <li>Project 2</li>
+                <li>Project 3</li>
+              </ul>
+
+            </div>
+          </div>
+        </section>
+
+      </section>
+      <!-- // TEXT ELEMENTS SECTION -->
+
+
+
+      <!-- PORTFOLIO ELEMENTS SECTION // -->
+      <section id="portfolio_elements">
+
+        <section class="section-text">
+          <h2>Biography</h2>
+        </section>
+
+        <section class="section-text">
+          <h2>Project #1:</h2>
+        </section>
+
+        <section class="section-text">
+          <h2>Project #2:</h2>
+        </section>
+
+      </section>
+      <!-- // PORTFOLIO ELEMENTS SECTION -->
+
+      <!-- CITATIONS SECTION -->
+
+      <section id="citations">
+        <section class="section-text">
+          <h2>Citations</h2>
+
+          <h3>Fonts:</h3>
+          <ul>
+
+            <li class="selector-item">
+              Rodrigo Fuenzalida & Jordan Egstad designed in 2023.
+              <strong>Instrument Serif</strong>. Retrieved from
+              <a
+                class="citation-link"
+                href="https://fonts.google.com/specimen/Instrument+Serif?categoryFilters=Serif:%2FSerif%2F*,%2FSlab%2F*&preview.script=Latn"
+                >https://fonts.google.com/specimen/Instrument+Serif?categoryFilters=Serif:%2FSerif%2F*,%2FSlab%2F*&preview.script=Latn</a
+              >.
+            </li>
+
+            <li class="selector-item">
+              Christian Thalmann designed in 2015.
+              <strong>Cormorant Garamond</strong>. Retrieved from
+              <a
+                class="citation-link"
+                href="https://fonts.google.com/specimen/Cormorant+Garamond?categoryFilters=Serif:%2FSerif%2FOld+Style+Garalde&query=garamond"
+                >https://fonts.google.com/specimen/Cormorant+Garamond?categoryFilters=Serif:%2FSerif%2FOld+Style+Garalde&query=garamond</a
+              >.
+            </li>
+
+          </ul>
+        </div>
       </section>
 
-      <section>
-        <h2>Submit/Reset Buttons</h2>
-      </section>
+      <!-- // CITATIONS SECTION -->
 
-      <section>
-        <h2>Text Input Field</h2>
-      </section>
+    </div>
 
-    </section>
-    <!-- // INTERACTIVE ELEMENTS SECTION -->
-
-
-
-    <!-- TEXT ELEMENTS SECTION // -->
-    <section id="text_elements">
-
-      <section>
-        <h2>Headings</h2>
-      </section>
-
-      <section>
-        <h2>Paragraphs</h2>
-      </section>
-
-      <section>
-        <h2>Bulleted Lists</h2>
-      </section>
-
-      <section>
-        <h2>Numbered Lists</h2>
-      </section>
-
-    </section>
-    <!-- // TEXT ELEMENTS SECTION -->
-
-
-
-    <!-- COMBINED ELEMENTS SECTION // -->
-    <section id="combined_elements">
-
-      <section>
-        <h2>Main Navigation</h2>
-      </section>
-
-      <section>
-        <h2>Product Listing</h2>
-      </section>
-
-    </section>
-    <!-- // COMBINED ELEMENTS SECTION -->
-
-
+    <footer class="flexbox">
+      <p class="footer-text">© 2026 Kristyn Tsui. All Rights Reserved.</p>
+      <p class="footer-links-list">
+        <span
+          ><a class="footer-link" href="styleguide.html"
+            >Style Guide</a
+          ></span
+        >
+        |
+        <span
+          ><a class="footer-link" href="#footer"
+            >Citations</a
+          ></span
+        >
+        |
+        <span
+          ><a
+            class="footer-link"
+            target="_blank"
+            href="#footer"
+            >GitHub Repository</a
+          ></span
+        >
+      </p>
+    </footer>
   </body>
 </html>

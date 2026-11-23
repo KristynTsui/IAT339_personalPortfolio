@@ -1,27 +1,37 @@
 @font-face {
-  font-family: "Instrument Serif";
-  src: url("/fonts/InstrumentSerif-Regular.woff2") format("woff2");
-  font-style: normal;
-
-  font-display: swap;
+    font-family: "Instrument Serif";
+    src: url("fonts/InstrumentSerif-Regular.woff2") format("woff2");
+    font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
-  font-family: "Instrument Serif - Italic";
-  src: url("/fonts/InstrumentSerif-Italic.woff2") format("woff2");
-  font-style: italic;
-
-  font-display: swap;
+    font-family: "Instrument Serif - Italic";
+    src: url("fonts/InstrumentSerif-Italic.woff2") format("woff2");
+    font-style: italic;
+    font-display: swap;
 }
 
 @font-face {
     font-family: "Garamond Medium";
-    src: url("/fonts/CormorantGaramond-Regular.ttf");
+    src: url("fonts/CormorantGaramond-Regular.ttf") format("truetype");
     font-style: normal;
-
     font-display: swap;
 }
 
+@font-face {
+    font-family: "Garamond Bold";
+    src: url("fonts/CormorantGaramond-Bold.ttf") format(truetype);
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Garamond Italic";
+    src: url("fonts/CormorantGaramond-Italic.ttf") format(truetype);
+    font-style: normal;
+    font-display: swap;
+}
 
 /* Main Headings and Title Style */
 
@@ -32,33 +42,38 @@ h1 {
 }
 
 h2 {
-  font-family: "Instrument Serif", serif;
+  font-family: "Garamond Bold", serif;
   font-weight: 300;
   font-style: normal;
 }
 
 h3 {
-  font-family: "Instrument Serif", serif;
+  font-family: "Garamond Italic", serif;
   font-weight: 200;
   font-style: normal;
   text-transform: uppercase;
+  text-decoration: underline;
 }
+
+p {
+  font-family: Garamond Medium;
+  font-weight: 100;
+  font-style: normal;
+  text-transform: none;
+}
+
 
 /* Subtitle Style */
 
-.rendered-subtitle {
+.subtitle {
   font-family: "Instrument Serif - Italic", serif;
   font-weight: 100;
 }
 
 /* Element Styles */
 
-p {
-
-}
-
 .nav-link {
-  font-family: "Instrument Serif", serif;
+  font-family: "Garamond Bold", serif;
   font-weight: 200;
   font-style: normal;
   text-transform: uppercase;
@@ -75,4 +90,67 @@ p {
   font-family: "Instrument Serif", serif;
   font-weight: 200;
   font-style: normal;
+}
+
+.in-text-link {
+  font-family: Garamond Medium;
+  font-weight: 100;
+  font-style: normal;
+  text-transform: none;
+}
+
+label {
+  font-family: Garamond Medium;
+  font-weight: 100;
+  font-style: normal;
+  text-transform: none;
+}
+
+input {
+  font-family: Garamond Medium;
+  font-weight: 100;
+  font-style: normal;
+  text-transform: none;
+}
+
+code {
+    padding: 1rem;
+    background-color: var(--light-cream);
+    border-radius: 10px;
+    color: var(--base-brown);
+}
+
+button {
+  font-family: Garamond Medium;
+  font-weight: 100;
+  font-style: normal;
+  text-transform: none;
+}
+
+.citation-link {
+  font-family: Garamond Medium;
+  font-weight: 100;
+  font-style: normal;
+  text-transform: none;
+}
+
+.citation-link:hover, .citation-link:focus {
+  font-family: Garamond Medium;
+  font-weight: 100;
+  font-style: normal;
+  text-transform: none;
+}
+
+.footer-link {
+  font-family: Garamond Medium;
+  font-weight: 100;
+  font-style: normal;
+  text-transform: none;
+}
+
+.footer-link:hover, .footer-link:focus {
+  font-family: Garamond Medium;
+  font-weight: 100;
+  font-style: normal;
+  text-transform: none;
 }
